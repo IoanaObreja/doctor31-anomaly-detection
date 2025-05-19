@@ -1,0 +1,6 @@
+@use "../public/themes/theme.scss" as theme;
+
+body {
+    font-family: var(----mat-sys-brand-font-family);
+    background-color: var(--mat-sys-background);
+}

@@ -1,0 +1,57 @@
+.file-card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 16px;
+    width: 600px; 
+    border: 1px solid var(--mat-sys-outline-variant);
+    border-radius: 12px;
+    margin: 20px auto;
+
+    .delete-icon {
+        margin-left: auto;
+    }
+}
+
+.file-upload-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.drag-and-drop-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width: 600px; 
+    height: 300px;
+    background-color: var(--mat-sys-surface-container-highest);
+    padding: 20px;
+    border: 2px dashed var(--mat-sys-primary);
+    border-radius: 12px;
+    color: var(--mat-sys-primary);
+    text-align: center;
+    margin: auto; 
+
+    .description-text {
+        margin-bottom: auto;
+    }
+}
+
+.continue-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.upload-icon-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--mat-sys-primary);
+}

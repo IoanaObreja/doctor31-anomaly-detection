@@ -1,0 +1,26 @@
+@use '../../public/themes/theme.scss' as theme;
+@use '@angular/material' as mat;
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 2px solid var(--mat-sys-outline-variant);
+    border-bottom: 2px solid var(--mat-sys-outline-variant);
+    font-size: var(--mat-sys-display-medium-size);
+
+    .doctor-title {
+        color: var(--mat-sys-primary);
+        font-weight: var(--mat-sys-bold-font-weight);
+    }
+
+    .number-title {
+        color: var(--mat-sys-secondary);
+        font-weight: var(--mat-sys-bold-font-weight);
+    }
+}
+
+.content {
+    min-height: calc(100vh - 100px);
+    padding: 50px 40px 50px 40px;
+}
