@@ -1,0 +1,19 @@
+@if(dataSource){
+<mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+    @for(column of displayedColumns; track column) {
+    <ng-container [matColumnDef]="column">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>{{ column }}</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{ element[column] }}</mat-cell>
+    </ng-container>
+    }
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
+}
+@else {
+<div class="no-data-container">
+    <span class="material-symbols-outlined">info</span>
+    <div class="no-data-text">No data available</div>
+</div>
+}
