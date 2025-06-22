@@ -1,0 +1,17 @@
+mat-table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  mat-header-cell, mat-cell {
+    padding: 8px;
+    text-align: left;
+    background-color: var(--mat-sys-primary-fixed);
+    color: var(--mat-sys-on-primary-fixed)
+  }
+  
+  mat-header-row {
+    background-color: var(--mat-sys-primary);
+    color: var(--mat-sys-on-primary);
+    font-weight: var(--mat-sys-bold-font-weight);
+  }
